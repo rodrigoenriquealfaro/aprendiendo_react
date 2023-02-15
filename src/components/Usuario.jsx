@@ -1,4 +1,4 @@
-import { TituloRojo, TituloAzul } from "./Titulo"
+import { Titulo } from "./Titulo"
 
 const Usuario = () => {
     const pais = null
@@ -6,8 +6,8 @@ const Usuario = () => {
 
     return (
         <div>
-            <TituloRojo />
-            <TituloAzul />
+            <Titulo usuario="Carlos" />
+            <Titulo usuario="Cesar" color="blue" />
             <p>Tu lista de amigos es:</p>
             {pais && <p>Tu eres de: {pais}</p>}
             <ul>

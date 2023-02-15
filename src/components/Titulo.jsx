@@ -1,23 +1,10 @@
-const TituloRojo = () => {
-    const nombre = "Rodrigo"
-    const color = "red"
+const Titulo = ({ usuario = 'usuario', color = 'grey' }) => {
 
     return (
         <div>
-            <h1 className="titulo" style={{ color: color }}>Hola {nombre}!</h1>
+            <h1 className="titulo" style={{ color: color }}>Hola {usuario}!</h1>
         </div>
     )
 }
 
-const TituloAzul = () => {
-    const nombre = "Rodrigo"
-    const color = "blue"
-
-    return (
-        <div>
-            <h1 className="titulo" style={{ color: color }}>Hola {nombre}!</h1>
-        </div>
-    )
-}
-
-export { TituloRojo, TituloAzul }
+export { Titulo }
